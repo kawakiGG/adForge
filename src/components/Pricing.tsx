@@ -13,8 +13,8 @@ export default function Pricing() {
 
                 <Title
                     title="Pricing"
-                    heading="Simple, transparent pricing"
-                    description="Flexible agency packages designed to fit startups, growing teams and established brands."
+                    heading="Pricing plans"
+                    description="Our pricing is simple, transparent and flexible. Choose the plan that suits your needs and have a fun trip to creativity town."
                 />
 
                 <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -74,11 +74,11 @@ export default function Pricing() {
                             <div>
                                 {plan.popular ? (
                                     <PrimaryButton className="w-full">
-                                        Get started
+                                       BUY NOW
                                     </PrimaryButton>
                                 ) : (
                                     <GhostButton className="w-full justify-center">
-                                        Get started
+                                        BUY NOW
                                     </GhostButton>
                                 )}
                             </div>

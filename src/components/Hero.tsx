@@ -10,20 +10,20 @@ export default function Hero() {
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop'
     ];
 
-    const mainImageUrl = 'https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=1600&auto=format&fit=crop';
+    const mainImageUrl = 'https://www.heygen.com/_next/image?url=https%3A%2F%2Fdynamic.heygen.ai%2Fwww%2FAvatars%2520Page%2520-%2520Rebrand%2FSilvia.png%3FupdatedAt%3D1757984236000&w=384&q=75';
 
     const galleryStripImages = [
-        'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=100',
-        'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=100',
-        'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=100',
+        'https://www.heygen.com/_next/image?url=https%3A%2F%2Fdynamic.heygen.ai%2Fwww%2FAvatars%2520Page%2520-%2520Rebrand%2FAraj.png%3FupdatedAt%3D1757984236000&w=384&q=75',
+        'https://www.heygen.com/_next/image?url=https%3A%2F%2Fdynamic.heygen.ai%2Fwww%2FAvatars%2520Page%2520-%2520Rebrand%2FMelani.png%3FupdatedAt%3D1757984236000&w=384&q=75',
+        'https://www.heygen.com/_next/image?url=https%3A%2F%2Fdynamic.heygen.ai%2Fwww%2FAvatars%2520Page%2520-%2520Rebrand%2FJeyla.png%3FupdatedAt%3D1757984236000&w=384&q=75',
     ];
 
     const trustedLogosText = [
-        'Startups',
-        'Scale-ups',
-        'Founders',
-        'Global teams',
-        'Creative brands'
+        'GrainrotHQ',
+        'GrainrotHQ',
+        'GrainrotHQ',
+        'GrainrotHQ',
+        'GrainrotHQ'
     ];
 
     return (
@@ -32,7 +32,7 @@ export default function Hero() {
                 <div className="max-w-6xl mx-auto px-4 min-h-screen max-md:w-screen max-md:overflow-hidden pt-32 md:pt-26 flex items-center justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                         <div className="text-left">
-                            <motion.a href="https://prebuiltui.com/tailwind-templates?ref=pixel-forge" className="inline-flex items-center gap-3 pl-3 pr-4 py-1.5 rounded-full bg-white/10 mb-6 justify-start"
+                            <motion.a className="inline-flex items-center gap-3 pl-3 pr-4 py-1.5 rounded-full bg-white/10 mb-6 justify-start"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
@@ -141,13 +141,13 @@ export default function Hero() {
                                     />
 
                                     <div className="absolute left-4 top-4 px-3 py-1 rounded-full bg-black/15 backdrop-blur-sm text-xs">
-                                        Branding • Web • Growth
+                                        Social-ready • 9:16 & 16:9
                                     </div>
 
                                     <div className="absolute right-4 bottom-4">
                                         <button className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-white/6 backdrop-blur-sm hover:bg-white/10 transition focus:outline-none">
                                             <PlayIcon className="size-4" />
-                                            <span className="text-xs">See case study</span>
+                                            <span className="text-xs">Preview</span>
                                         </button>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@ export default function Hero() {
 
                                         <span className="relative inline-flex size-2 rounded-full bg-green-600" />
                                     </div>
-                                    20+ completed projects
+                                    +20 More
                                 </motion.div>
                             </div>
                         </motion.div>
