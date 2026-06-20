@@ -1,6 +1,7 @@
 import { ArrowRightIcon, PlayIcon, ZapIcon, CheckIcon } from 'lucide-react';
 import { PrimaryButton, GhostButton } from './Buttons';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
 
@@ -32,7 +33,7 @@ export default function Hero() {
                 <div className="max-w-6xl mx-auto px-4 min-h-screen max-md:w-screen max-md:overflow-hidden pt-32 md:pt-26 flex items-center justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                         <div className="text-left">
-                            <motion.a className="inline-flex items-center gap-3 pl-3 pr-4 py-1.5 rounded-full bg-white/10 mb-6 justify-start"
+                            <motion.div className="inline-flex items-center gap-3 pl-3 pr-4 py-1.5 rounded-full bg-white/10 mb-6 justify-start cursor-default"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
@@ -50,30 +51,30 @@ export default function Hero() {
                                         />
                                     ))}
                                 </div>
-                                <span className="text-xs text-gray-200/90">
-                                    Trusted by creators and agencies worldwide
+                                <span className="text-xs text-gray-250/90">
+                                    Trusted by 10,000+ creators & brands
                                 </span>
-                            </motion.a>
+                            </motion.div>
 
-                            <motion.h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 max-w-xl"
+                            <motion.h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6 max-w-xl text-slate-100 dark:text-slate-100 light:text-slate-900"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.1 }}
                             >
-                                Create viral UGC ads in seconds<br />
-                                <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 to-indigo-400">
-                                    high-impact digital experiences
+                                Generate High-Converting UGC Ads with AI in Seconds<br />
+                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-indigo-300 to-violet-400">
+                                    high-impact digital variations
                                 </span>
                             </motion.h1>
 
-                            <motion.p className="text-gray-300 max-w-lg mb-8"
+                            <motion.p className="text-slate-400 dark:text-slate-400 light:text-slate-650 max-w-lg mb-8 text-sm leading-relaxed"
                                 initial={{ y: 60, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.2 }}
                             >
-                                Upload product images and a model photo- our AI will instantly create a professional high quality lifestyle mockup and short form videos optimizd for commercials and social media.
+                                Input a product description and select pre-built hooks. Our AI builds complete UGC video variations, scripts, and realistic actor renders tailored for social ads.
                             </motion.p>
 
                             <motion.div className="flex flex-col sm:flex-row items-center gap-4 mb-8"
@@ -82,14 +83,17 @@ export default function Hero() {
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.3 }}
                             >
-                                <a href="/" className="w-full sm:w-auto">
-                                    <PrimaryButton className="max-sm:w-full py-3 px-7">
-                                        Create for free.
+                                <Link to="/auth" className="w-full sm:w-auto">
+                                    <PrimaryButton className="max-sm:w-full py-3 px-7 text-white shadow-lg shadow-indigo-500/20">
+                                        Create Free Ad
                                         <ArrowRightIcon className="size-4" />
                                     </PrimaryButton>
-                                </a>
+                                </Link>
 
-                                <GhostButton className="max-sm:w-full max-sm:justify-center py-3 px-5">
+                                <GhostButton 
+                                    onClick={() => alert("Launching platform tutorial...")}
+                                    className="max-sm:w-full max-sm:justify-center py-3 px-5 cursor-pointer text-slate-350"
+                                >
                                     <PlayIcon className="size-4" />
                                     Watch demo
                                 </GhostButton>

@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
 * {
     font-family: 'Outfit', sans-serif;
 }
 
 @layer base {
     body {
-        @apply bg-gray-950 text-white antialiased;
+        @apply bg-slate-950 text-slate-100 antialiased transition-colors duration-300;
     }
 
     button {
@@ -27,7 +30,7 @@
 
 .animate-marquee {
     display: inline-flex;
-    animation: marquee 16s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 @keyframes float {
@@ -49,16 +52,14 @@
 }
 
 @theme {
-    --color-primary: #8b5cf6;
-    --color-primary-hover: #7c3aed;
+    --color-primary: #6366f1;
+    --color-primary-hover: #4f46e5;
     --color-secondary: #ec4899;
-    --color-dark-bg: #0f172a;
-    --color-dark-card: #1e293b;
 }
 
 @layer utilities {
     .glass-panel {
-        @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+        @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl dark:bg-black/25 dark:border-white/10 light:bg-slate-100/80 light:border-slate-200 light:shadow-md;
     }
 
     .btn-secondary {

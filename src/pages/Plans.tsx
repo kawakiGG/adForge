@@ -1,9 +1,9 @@
-const Plans = () => {
-    return (
-        <div>
+import Pricing from "../components/Pricing";
 
-        </div>
-    );
-};
-
-export default Plans;
+export default function Plans() {
+  return (
+    <div className="py-12 bg-slate-950/20 dark:bg-slate-950/20 light:bg-slate-50/50">
+      <Pricing />
+    </div>
+  );
+}
